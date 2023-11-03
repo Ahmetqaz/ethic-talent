@@ -32,6 +32,7 @@
       line-height: 1;
       @include transition;
       font-family: $font-secondary;
+      @include ellipsis(1);
       &._sm {
         font-size: 14px;
         font-weight: 400;
