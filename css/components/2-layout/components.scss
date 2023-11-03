@@ -34,7 +34,7 @@
     font-size: inherit;
     line-height: 1;
     &::placeholder {
-      color: $gray;
+      color: $black-3;
     }
   }
   input:focus,
@@ -189,6 +189,14 @@
       .ico {
         transform: scale(0.9);
       }
+    }
+  }
+  &--border {
+    background: transparent;
+    color: $white;
+    border-color: $white;
+    &:hover {
+      background: rgba($white, 0.2);
     }
   }
   &:active {
