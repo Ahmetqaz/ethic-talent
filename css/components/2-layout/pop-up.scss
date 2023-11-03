@@ -1,0 +1,75 @@
+.popUp {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 475px;
+  height: 100%;
+  @include transition;
+  opacity: 0;
+  &__contact {
+    height: 100%;
+    background: $yellow;
+    padding: 110px 64px 38px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &-box {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  transform: translateX(100%);
+  pointer-events: none;
+  &.active {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@mixin popUp-1340 {
+  .popUp {
+    width: 450px;
+    &__contact {
+      padding: 110px 40px 38px 40px;
+    }
+  }
+}
+@mixin popUp-1280 {
+  .popUp {
+    width: 430px;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+    right: unset;
+    transform: translateX(-100%);
+    &__contact {
+      width: 100%;
+      padding: 60px 30px 40px 30px;
+      overflow: auto;
+    }
+  }
+}
+@mixin popUp-1160 {
+}
+@mixin popUp-1025 {
+}
+@mixin popUp-940 {
+}
+@mixin popUp-768 {
+}
+@mixin popUp-580 {
+  .popUp {
+    width: calc(100% - 80px);
+  }
+}
+@mixin popUp-460 {
+  .popUp {
+    &__contact {
+      width: 100%;
+      padding: 40px 20px 30px 20px;
+      overflow: auto;
+    }
+  }
+}
