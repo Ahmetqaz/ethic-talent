@@ -1,4 +1,5 @@
 .contact {
+  padding: 110px 0;
   &__inner {
     display: flex;
     flex-direction: column;
@@ -11,8 +12,13 @@
       h2 {
         margin-bottom: 8px;
       }
-      h6 {
+      strong {
         font-weight: 600;
+        font-size: 16px;
+        font-family: $font-secondary;
+      }
+      p {
+        font-family: $font-secondary;
       }
     }
     &-row {
@@ -34,6 +40,7 @@
     font-size: 16px;
     gap: 8px;
     width: calc(50% - 12px);
+    font-family: $font-secondary;
     &-ico {
       font-size: inherit;
       width: 2em;
@@ -47,12 +54,21 @@
       }
     }
     strong {
+      font-family: inherit;
       font-size: 20px;
       font-weight: 700;
     }
     a {
+      font-family: inherit;
       text-decoration: underline;
       max-width: 240px;
+      @include transition;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    .button {
+      margin: 16px auto 0 0;
     }
   }
   .form {

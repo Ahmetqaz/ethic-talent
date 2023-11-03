@@ -1,6 +1,73 @@
-/// section footer
 .footer {
-  margin-top: auto;
+  padding: 52px 0 80px;
   &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &._border {
+        padding-top: 32px;
+        border-top: 1px solid $black;
+      }
+    }
+    &-container {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    &-group {
+      display: flex;
+      gap: 32px;
+      &._sm {
+        gap: 24px;
+      }
+    }
+    &-link {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1;
+      @include transition;
+      font-family: $font-secondary;
+      &._sm {
+        font-weight: 400;
+        text-decoration: underline;
+      }
+      &:hover {
+        color: $primary;
+      }
+    }
+    &-body {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      max-width: 400px;
+      strong {
+        font-family: $font-secondary;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+    &-wrapper {
+      display: flex;
+      gap: 16px;
+      .button {
+        padding: 0.7em 1.5em;
+      }
+      .input {
+        input {
+          font-family: $font-secondary;
+        }
+      }
+    }
+    p {
+      font-family: $font-secondary;
+      &.copy {
+        font-size: 14px;
+      }
+    }
   }
 }

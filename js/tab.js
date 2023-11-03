@@ -56,3 +56,14 @@ tabs.forEach((tabEvent) => {
     tabClickHandler(tabEvent);
   };
 });
+
+let serviceTabs = document.querySelectorAll(".service__item");
+serviceTabs.forEach((item) => {
+  let serviceBtn = item.querySelector(".service__item-button");
+  serviceBtn.addEventListener("click", () => {
+    serviceTabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    item.classList.add("active");
+  });
+});
