@@ -8,6 +8,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 20px;
       &._border {
         padding-top: 32px;
         border-top: 1px solid $black;
@@ -32,6 +33,7 @@
       @include transition;
       font-family: $font-secondary;
       &._sm {
+        font-size: 14px;
         font-weight: 400;
         text-decoration: underline;
       }
@@ -67,6 +69,74 @@
       font-family: $font-secondary;
       &.copy {
         font-size: 14px;
+      }
+    }
+  }
+}
+
+@mixin footer-1280 {
+}
+@mixin footer-1160 {
+}
+@mixin footer-1025 {
+}
+@mixin footer-940 {
+  .footer {
+    padding: 40px 0 60px;
+    &__inner {
+      gap: 50px;
+      &-group {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      &-link {
+        width: calc(50% - 10px);
+        &._sm {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+@mixin footer-768 {
+  .footer {
+    padding: 30px 0 30px;
+    &__inner {
+      gap: 30px;
+      &-row {
+        flex-direction: column;
+        gap: 30px;
+      }
+      &-container {
+        width: 100%;
+      }
+      &-group {
+        width: 100%;
+        flex-wrap: unset;
+        &._sm {
+          justify-content: center;
+        }
+      }
+      &-body {
+        width: 100%;
+        max-width: unset;
+      }
+      &-link {
+        width: auto;
+      }
+    }
+  }
+}
+@mixin footer-580 {
+}
+@mixin footer-460 {
+  .footer {
+    &__inner {
+      &-group {
+        flex-wrap: wrap;
+      }
+      &-link {
+        width: calc(50% - 10px);
       }
     }
   }

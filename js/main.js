@@ -19,7 +19,9 @@ if (menuBtn) {
     }
   };
 
-  const header = document.getElementById("header");
+  
+}
+const header = document.getElementById("header");
   if (header)
     window.addEventListener("scroll", () => {
       if (document.documentElement.scrollTop > 400) {
@@ -28,8 +30,6 @@ if (menuBtn) {
         header.classList.remove("sticky");
       }
     });
-}
-
 let popUpBtn = document.getElementById("popUpBtn");
 if (popUpBtn) {
   let popUp = document.getElementById("popUp");
