@@ -1699,15 +1699,13 @@ svg {
   margin: 0 auto;
 }
 .hero__tab-button {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   font-size: 16px;
   color: #fff;
   padding: 1em 1em 1.3em 1em;
   position: relative;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
+  width: calc(25% - 10px);
 }
 .hero__tab-button::after {
   content: "";
@@ -2024,6 +2022,11 @@ svg {
   .logo {
     font-size: 16px;
   }
+  .hero {
+    height: calc(100vh - 68px);
+    height: calc(100dvh - 68px);
+    padding-bottom: 60px;
+  }
 }
 @media (max-width: 940px) {
   .autoContainer {
@@ -2070,14 +2073,23 @@ svg {
   .autoContainer {
     padding: 0 15px;
   }
+  h1 {
+    font-size: 50px;
+  }
   .intro__inner-info {
     font-size: 35px;
     gap: 20px;
+  }
+  .hero {
+    padding: 40px 0;
   }
 }
 @media (max-width: 580px) {
   ._hideMob {
     display: none;
+  }
+  h1 {
+    font-size: 42px;
   }
   .popUp {
     width: calc(100% - 80px);
@@ -2093,8 +2105,21 @@ svg {
   .intro__inner-info strong {
     width: 100%;
   }
+  .hero {
+    padding: 30px 0;
+  }
+  .hero__tab {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .hero__tab-button {
+    width: calc(50% - 8px);
+  }
 }
 @media (max-width: 460px) {
+  h1 {
+    font-size: 38px;
+  }
   .input {
     font-size: 14px;
   }
@@ -2112,5 +2137,10 @@ svg {
     width: 100%;
     padding: 40px 20px 30px 20px;
     overflow: auto;
+  }
+}
+@media (max-width: 390px) {
+  h1 {
+    font-size: 32px;
   }
 }

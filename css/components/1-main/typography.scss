@@ -38,6 +38,7 @@ p {
 @mixin typography-1280 {
 }
 @mixin typography-1160 {
+
 }
 @mixin typography-1025 {
   p {
@@ -47,8 +48,22 @@ p {
 @mixin typography-940 {
 }
 @mixin typography-768 {
+  h1 {
+    font-size: 50px;
+  }
 }
 @mixin typography-580 {
+  h1 {
+    font-size: 42px;
+  }
 }
 @mixin typography-460 {
+  h1 {
+    font-size: 38px;
+  }
+}
+@mixin typography-390 {
+  h1 {
+    font-size: 32px;
+  }
 }
