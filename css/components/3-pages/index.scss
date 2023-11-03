@@ -213,6 +213,17 @@
     }
   }
 }
+.about {
+  padding: 30px 0 70px 0;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    h2 {
+      margin-bottom: 1em;
+    }
+  }
+}
 .employment {
   padding: 104px 0 40px;
   &__inner {

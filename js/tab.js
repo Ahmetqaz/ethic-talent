@@ -31,6 +31,32 @@ tabContainer.forEach((item) => {
   }
 });
 
+const tabs = document.querySelectorAll('[data-event="tab"]');
+
+function forEachTabFromEvents(tabEvents, callback) {
+  tabEvents.forEach((tabEvent) => {
+    const tabSelector = tabEvent.dataset?.tab;
+    const tab = tabSelector ? document.querySelector(tabSelector) : null;
+    if (!tab) return;
+    callback(tab, tabEvent);
+  });
+}
+function tabClickHandler(tabEvent) {
+  const group = tabEvent.dataset?.group;
+  const groupTabEvents = group
+    ? document.querySelectorAll(`[data-event="tab"][data-group="${group}"]`)
+    : tabs;
+  forEachTabFromEvents(groupTabEvents, (tab, eventButton) => {
+    tab.classList.toggle("active", eventButton === tabEvent);
+  });
+}
+
+tabs.forEach((tabEvent) => {
+  tabEvent.onclick = function () {
+    tabClickHandler(tabEvent);
+  };
+});
+
 let serviceTabs = document.querySelectorAll(".service__item");
 serviceTabs.forEach((item) => {
   let serviceBtn = item.querySelector(".service__item-button");
