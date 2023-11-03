@@ -6,6 +6,7 @@
   height: 100%;
   @include transition;
   opacity: 0;
+  z-index: 2;
   &__contact {
     height: 100%;
     background: $yellow;

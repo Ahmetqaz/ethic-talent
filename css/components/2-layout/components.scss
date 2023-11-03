@@ -198,12 +198,20 @@
     &:hover {
       background: rgba($white, 0.2);
     }
+    &._black {
+      border-color: $black;
+      color: $black;
+      &:hover {
+        background: rgba($black, 0.2);
+      }
+    }
   }
   &--rightIco {
     display: flex;
     padding: unset;
     color: $black;
     gap: 8px;
+    background: unset;
     .ico {
       width: 24px;
       height: 24px;

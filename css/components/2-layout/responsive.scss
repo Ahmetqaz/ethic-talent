@@ -29,6 +29,7 @@
 }
 @media (max-width: 860px) {
   @include index-860;
+  @include header-860;
 }
 @media (max-width: 768px) {
   .autoContainer {
@@ -45,7 +46,9 @@
 }
 @media (max-width: 460px) {
   @include components-460;
+  @include header-460;
   @include popUp-460;
+
 }
 
 // @mixin popUp-1280{

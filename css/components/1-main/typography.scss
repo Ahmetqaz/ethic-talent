@@ -15,7 +15,7 @@ h5 {
   font-size: 24px;
 }
 h6 {
-  font-size: 16px;
+  font-size: 18px;
 }
 h1,
 h2,
@@ -30,6 +30,9 @@ h6 {
 
 p {
   line-height: 1.5em;
+  &._sm {
+    font-size: 12px;
+  }
 }
 
 @mixin typography-1280 {

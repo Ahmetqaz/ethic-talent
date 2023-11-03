@@ -6,6 +6,7 @@
   padding: 16px 0;
   z-index: 1;
   @include transition;
+  background: $white;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -29,6 +30,7 @@
     padding: 20px 0;
     animation: 0.3s sticky ease-in;
     transition-duration: 0.5s;
+    border-bottom: 1px solid $black;
   }
   &.spacePopUp {
     padding-right: 455px;
@@ -98,6 +100,7 @@
   position: relative;
   font-size: 10px;
   width: 1.8em;
+  min-width: 1.8em;
   height: 1.2em;
   color: $white;
   background: transparent;
@@ -174,11 +177,19 @@
     font-size: 16px;
   }
 }
-@mixin header-940 {
+@mixin header-860 {
+  .logo {
+    font-size: 14px;
+  }
 }
 @mixin header-768 {
 }
 @mixin header-580 {
 }
 @mixin header-460 {
+  .logo {
+    width: 100%;
+    flex: 1;
+    max-width: 410px;
+  }
 }
