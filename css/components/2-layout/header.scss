@@ -162,15 +162,12 @@
     }
   }
 }
-
 @mixin header-1280 {
   .header {
     &.spacePopUp {
       padding-right: 0;
     }
   }
-}
-@mixin header-1160 {
 }
 @mixin header-1025 {
   .logo {
@@ -181,10 +178,6 @@
   .logo {
     font-size: 14px;
   }
-}
-@mixin header-768 {
-}
-@mixin header-580 {
 }
 @mixin header-460 {
   .logo {

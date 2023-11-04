@@ -14,10 +14,9 @@
     }
   }
   .button {
-    margin-right: auto;
+    &--text {
+      margin-right: auto;
+    }
     padding: 0.9em 1.34em;
-  }
-  &__group{
-    
   }
 }

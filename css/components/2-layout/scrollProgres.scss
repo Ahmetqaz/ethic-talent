@@ -93,10 +93,6 @@
   }
 }
 
-@mixin scrollProgres-1280 {
-}
-@mixin scrollProgres-1160 {
-}
 @mixin scrollProgres-1025 {
   .scrollProgres {
     &__item {
@@ -140,8 +136,6 @@
     }
   }
 }
-@mixin scrollProgres-768 {
-}
 @mixin scrollProgres-580 {
   .scrollProgres {
     &__item {
@@ -172,7 +166,6 @@
     }
   }
 }
-
 @mixin scrollProgres-390 {
   .scrollProgres {
     &__item {

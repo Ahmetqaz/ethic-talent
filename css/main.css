@@ -172,6 +172,9 @@ h2 {
 h3 {
   font-size: 40px;
 }
+h3._lg {
+  font-size: 44px;
+}
 
 h4 {
   font-size: 30px;
@@ -560,6 +563,20 @@ svg {
 }
 .button--rightIco:hover .ico {
   color: #eb625b;
+}
+.button--rounded {
+  background: #b6b6b6;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 0.9em 1.2em;
+}
+.button--rounded:hover {
+  opacity: 0.7;
+}
+.button--rounded._red {
+  background: #eb625b;
 }
 .button:active {
   opacity: 0.7;
@@ -1437,9 +1454,12 @@ svg {
   font-family: inherit;
 }
 .form .button {
-  margin-right: auto;
   padding: 0.9em 1.34em;
 }
+.form .button--text {
+  margin-right: auto;
+}
+
 .contact {
   padding: 110px 0;
 }
@@ -1871,6 +1891,184 @@ svg {
   background: #21c7fb;
 }
 
+.feedback {
+  padding: 90px 0;
+}
+.feedback__inner-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.feedback__inner-image {
+  width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.feedback__inner-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.feedback__inner-image .ratioImage {
+  padding-bottom: unset;
+  width: 100%;
+  height: 100%;
+}
+.feedback .form {
+  gap: 12px;
+}
+.feedback .form__wrapper {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+.feedback .form__wrapper h3 {
+  font-weight: 600;
+  line-height: 1.3;
+}
+.feedback .form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+.feedback .form__group .input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.feedback .form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  padding: 6px 0;
+}
+.feedback .form__container .input input {
+  padding: 0.8em 1.3em;
+}
+.feedback .form__container .input__wrapper input {
+  padding: 0.64em 1.2em;
+  font-weight: 500;
+}
+.feedback .form__container .input__wrapper input::-webkit-input-placeholder {
+  font-weight: 500;
+}
+.feedback .form__container .input__wrapper input::-moz-placeholder {
+  font-weight: 500;
+}
+.feedback .form__container .input__wrapper input:-ms-input-placeholder {
+  font-weight: 500;
+}
+.feedback .form__container .input__wrapper input::-ms-input-placeholder {
+  font-weight: 500;
+}
+.feedback .form__container .input__wrapper input::placeholder {
+  font-weight: 500;
+}
+.feedback .form .button--rounded._red {
+  padding: 1.3em 1.34em;
+}
+.feedback .autoContainer {
+  padding-right: unset;
+}
+.feedback .input {
+  font-size: 18px;
+}
+.feedback .input input,
+.feedback .input textarea {
+  border-color: #b6b6b6;
+  border-width: 0.5px;
+  border-radius: 8px;
+  padding: 1.1em 1.3em;
+  font-size: inherit;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+}
+.feedback .input input::-webkit-input-placeholder, .feedback .input textarea::-webkit-input-placeholder {
+  color: #5c5c5c;
+}
+.feedback .input input::-moz-placeholder, .feedback .input textarea::-moz-placeholder {
+  color: #5c5c5c;
+}
+.feedback .input input:-ms-input-placeholder, .feedback .input textarea:-ms-input-placeholder {
+  color: #5c5c5c;
+}
+.feedback .input input::-ms-input-placeholder, .feedback .input textarea::-ms-input-placeholder {
+  color: #5c5c5c;
+}
+.feedback .input input::placeholder,
+.feedback .input textarea::placeholder {
+  color: #5c5c5c;
+}
+.feedback .input input:focus,
+.feedback .input textarea:focus {
+  border-color: #000;
+}
+.feedback .input textarea {
+  height: 146px;
+}
+.feedback .input__wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.feedback .input__wrapper input {
+  width: 190px;
+  background: #f7f6f3;
+  font-size: 20px;
+}
+.feedback .input__wrapper input::-webkit-input-placeholder {
+  color: #959595;
+  letter-spacing: 6px;
+}
+.feedback .input__wrapper input::-moz-placeholder {
+  color: #959595;
+  letter-spacing: 6px;
+}
+.feedback .input__wrapper input:-ms-input-placeholder {
+  color: #959595;
+  letter-spacing: 6px;
+}
+.feedback .input__wrapper input::-ms-input-placeholder {
+  color: #959595;
+  letter-spacing: 6px;
+}
+.feedback .input__wrapper input::placeholder {
+  color: #959595;
+  letter-spacing: 6px;
+}
+.feedback .input__wrapper label {
+  font-size: 18px;
+  color: #959595;
+}
+
 .intro {
   padding: 38px 0;
   height: calc(100vh - 72px);
@@ -2232,6 +2430,12 @@ svg {
   }
 }
 @media (max-width: 1280px) {
+  h3 {
+    font-size: 35px;
+  }
+  h3._lg {
+    font-size: 40px;
+  }
   .main.spacePopUp {
     padding-right: 0;
   }
@@ -2287,6 +2491,12 @@ svg {
   .autoContainer {
     padding: 0 40px;
   }
+  h3 {
+    font-size: 30px;
+  }
+  h3._lg {
+    font-size: 36px;
+  }
   .barTabs__content {
     font-size: 20px;
   }
@@ -2320,6 +2530,36 @@ svg {
   .contact {
     padding: 90px 0;
   }
+  .feedback {
+    padding: 80px 0;
+  }
+  .feedback__inner-row {
+    gap: 40px;
+  }
+  .feedback__inner-image {
+    width: 400px;
+  }
+  .feedback .form__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .feedback .form__container .input {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .feedback .form__container .input__wrapper {
+    width: 100%;
+  }
+  .feedback .form__container .input__wrapper input {
+    width: 100%;
+  }
+  .feedback .form__container .button {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 @media (max-width: 1025px) {
   .autoContainer {
@@ -2330,6 +2570,9 @@ svg {
   }
   h3 {
     font-size: 28px;
+  }
+  h3._lg {
+    font-size: 30px;
   }
   .main {
     padding-top: 68px;
@@ -2411,6 +2654,15 @@ svg {
   .scrollProgres__scale-index {
     font-size: 36px;
   }
+  .feedback {
+    padding: 70px 0;
+  }
+  .feedback .input {
+    font-size: 16px;
+  }
+  .feedback .input__wrapper input {
+    font-size: 18px;
+  }
 }
 @media (max-width: 940px) {
   .autoContainer {
@@ -2450,6 +2702,28 @@ svg {
   }
   .scrollProgres__scale-index {
     font-size: 30px;
+  }
+  .feedback {
+    padding: 50px 0;
+  }
+  .feedback__inner-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+  .feedback__inner-image {
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .feedback__inner-image .ratioImage {
+    padding-bottom: 70%;
+  }
+  .feedback .autoContainer {
+    padding-right: 25px;
   }
 }
 @media (max-width: 860px) {
@@ -2683,6 +2957,9 @@ svg {
   .grid__item {
     width: calc(50% - 8px);
   }
+  .feedback .autoContainer {
+    padding-right: 15px;
+  }
 }
 @media (max-width: 580px) {
   ._hideMob {
@@ -2755,6 +3032,12 @@ svg {
   .scrollProgres__scale-index {
     font-size: 26px;
   }
+  .feedback {
+    padding: 40px 0;
+  }
+  .feedback .form__group {
+    gap: 12px;
+  }
 }
 @media (max-width: 460px) {
   h1 {
@@ -2803,6 +3086,16 @@ svg {
   .scrollProgres__scale-index {
     font-size: 20px;
   }
+  .feedback .form__group {
+    gap: 12px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feedback .form .button--rounded._red {
+    font-size: 18px;
+  }
 }
 @media (max-width: 390px) {
   h1 {
@@ -2810,6 +3103,12 @@ svg {
   }
   h2 {
     font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h3._lg {
+    font-size: 26px;
   }
   .scrollProgres__item {
     padding-left: 70px;

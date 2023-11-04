@@ -224,6 +224,20 @@
       }
     }
   }
+  &--rounded {
+    background: $white-2;
+    color: $white;
+    font-family: $font-primary;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 0.9em 1.2em;
+    &:hover {
+      opacity: 0.7;
+    }
+    &._red {
+      background: $red;
+    }
+  }
   &:active {
     opacity: 0.7;
   }
@@ -712,18 +726,10 @@
     }
   }
 }
-@mixin components-1160 {
-}
 @mixin components-1025 {
   .main {
     padding-top: 68px;
   }
-}
-@mixin components-940 {
-}
-@mixin components-860 {
-}
-@mixin components-580 {
 }
 @mixin components-460 {
   .input {
