@@ -152,10 +152,10 @@
     }
   }
 }
-
 @mixin info-580 {
   .info {
     &--lg {
+      padding-top: 40px;
       .info {
         &__inner {
           gap: 50px;
