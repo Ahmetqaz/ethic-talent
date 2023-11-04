@@ -99,6 +99,15 @@
       left: 0;
       background: $black-3;
     }
+    &._dark {
+      img {
+        opacity: 1;
+      }
+      &:before {
+        z-index: 1;
+        background: rgba($black, 0.5);
+      }
+    }
   }
   .autoContainer {
     width: 100%;
@@ -107,31 +116,12 @@
     flex-direction: column;
   }
 }
-.explore {
+.service {
   padding: 110px 0;
   &__inner {
     display: flex;
     flex-direction: column;
     gap: 70px;
-    &-row {
-      display: flex;
-      gap: 24px;
-    }
-  }
-  &__item {
-    width: calc(25% - 18px);
-    max-width: 304px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    text-align: center;
-    .ratioImage {
-      padding-bottom: 53%;
-    }
-    h5 {
-      line-height: 1.4em;
-      @include ellipsis(2);
-    }
   }
 }
 .about {
@@ -145,54 +135,71 @@
     }
   }
 }
-.employment {
-  padding: 104px 0 40px;
+.work {
+  padding-top: 110px;
   &__inner {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 80px;
     &-row {
       display: flex;
       align-items: center;
-      gap: 30px;
       justify-content: space-between;
-      h2 {
-        width: calc(50% - 15px);
-        max-width: 616px;
-      }
-      p {
-        width: calc(50% - 15px);
-        max-width: 616px;
-      }
+      gap: 30px;
+    }
+    &-title {
+      font-size: 128px;
+      font-weight: 700;
+      line-height: 1.2;
+      width: 430px;
     }
   }
-  &__footer {
-    .ratioImage {
-      padding-bottom: 18.5%;
-    }
+  .scrollProgres {
+    width: calc(100% - 450px);
+    max-width: 770px;
   }
 }
 
 @mixin index-1340 {
-}
-@mixin index-1280 {
-  .explore {
+  .work {
     &__inner {
-      gap: 60px;
-      &-row {
-        flex-wrap: wrap;
-        gap: 40px 32px;
+      &-title {
+        font-size: 120px;
       }
     }
-    &__item {
-      width: calc(50% - 16px);
-      max-width: unset;
+  }
+}
+@mixin index-1280 {
+  .service {
+    &__inner {
+      gap: 60px;
+    }
+  }
+  .work {
+    &__inner {
+      &-title {
+        font-size: 110px;
+      }
     }
   }
 }
 @mixin index-1160 {
-  .explore {
+  .service {
     padding: 90px 0;
+  }
+  .work {
+    padding-top: 100px;
+    &__inner {
+      &-row {
+        flex-direction: column;
+        gap: 50px;
+      }
+      &-title {
+        width: 100%;
+        font-size: 100px;
+      }
+    }
+    .scrollProgres {
+      width: 100%;
+      max-width: unset;
+    }
   }
 }
 @mixin index-1025 {
@@ -201,31 +208,30 @@
     height: calc(100dvh - 68px);
     padding-bottom: 60px;
   }
-  .employment {
-    padding: 80px 0 40px;
-    &__inner {
-      padding-bottom: 60px;
-      &-row {
-        flex-direction: column;
-        h2 {
-          width: 100%;
-          max-width: unset;
-        }
-        p {
-          width: 100%;
-          max-width: unset;
-        }
-      }
-    }
-  }
-  .explore {
+  .service {
     padding: 80px 0;
     &__inner {
       gap: 50px;
     }
   }
+  .work {
+    padding-top: 80px;
+    &__inner {
+      &-title {
+        font-size: 90px;
+      }
+    }
+  }
 }
 @mixin index-940 {
+  .work {
+    padding-top: 60px;
+    &__inner {
+      &-title {
+        font-size: 80px;
+      }
+    }
+  }
 }
 @mixin index-860 {
   .intro {
@@ -257,6 +263,14 @@
       display: none;
     }
   }
+  .work {
+    padding-top: 40px;
+    &__inner {
+      &-title {
+        font-size: 70px;
+      }
+    }
+  }
 }
 @mixin index-768 {
   .intro {
@@ -270,15 +284,6 @@
   .hero {
     padding: 40px 0;
   }
-  .employment {
-    padding: 60px 0 40px;
-    &__inner {
-      padding-bottom: 40px;
-      &-row {
-        gap: 24px;
-      }
-    }
-  }
   .about {
     padding-bottom: 40px;
     &__inner {
@@ -287,15 +292,19 @@
       }
     }
   }
-  .explore {
+  .service {
     padding: 60px 0;
     &__inner {
       &-row {
         gap: 30px 16px;
       }
     }
-    &__item {
-      width: calc(50% - 8px);
+  }
+  .work {
+    &__inner {
+      &-title {
+        font-size: 60px;
+      }
     }
   }
 }
@@ -321,16 +330,22 @@
       }
     }
   }
-  .explore {
+  .service {
     padding: 40px 0;
     &__inner {
       &-row {
         gap: 36px;
       }
     }
-    &__item {
-      width: 100%;
-      gap: 20px;
+  }
+  .work {
+    &__inner {
+      &-row {
+        gap: 40px;
+      }
+      &-title {
+        font-size: 50px;
+      }
     }
   }
 }
@@ -339,6 +354,13 @@
     &__inner {
       h2 {
         margin-bottom: 0;
+      }
+    }
+  }
+  .work {
+    &__inner {
+      &-title {
+        font-size: 40px;
       }
     }
   }

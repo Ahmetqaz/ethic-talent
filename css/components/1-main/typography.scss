@@ -7,6 +7,9 @@ h2 {
 }
 h3 {
   font-size: 40px;
+  &._lg {
+    font-size: 44px;
+  }
 }
 h4 {
   font-size: 30px;
@@ -36,8 +39,20 @@ p {
 }
 
 @mixin typography-1280 {
+  h3 {
+    font-size: 35px;
+    &._lg {
+      font-size: 40px;
+    }
+  }
 }
 @mixin typography-1160 {
+  h3 {
+    font-size: 30px;
+    &._lg {
+      font-size: 36px;
+    }
+  }
 }
 @mixin typography-1025 {
   p {
@@ -45,9 +60,10 @@ p {
   }
   h3 {
     font-size: 28px;
+    &._lg {
+      font-size: 30px;
+    }
   }
-}
-@mixin typography-940 {
 }
 @mixin typography-768 {
   h1 {
@@ -82,5 +98,11 @@ p {
   }
   h2 {
     font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+    &._lg {
+      font-size: 26px;
+    }
   }
 }

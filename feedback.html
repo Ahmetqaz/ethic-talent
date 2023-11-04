@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="icon" href="images/logo-small.svg" /> -->
+  <title>Home</title>
+</head>
+
+<body>
+  <div class="main " id="main">
+    <!-- #header -->
+    <header class="header" id="header">
+      <div class="autoContainer">
+        <div class="header__inner">
+          <a href="/" class="header__inner-logo">
+            <span class="logo">
+              <img src="./images/logo.png" alt="logo" />
+            </span>
+          </a>
+          <button class="burger" id="popUpBtn">
+            <span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- #header end -->
+    <!-- #feedback start -->
+    <section class="feedback">
+      <div class="autoContainer">
+        <div class="feedback__inner">
+          <div class="feedback__inner-row">
+            <div class="form__wrapper">
+              <h3 class="_lg">
+                Looking to for a job that fits your needs? Look no futher.
+              </h3>
+              <form class="form">
+                <div class="form__group">
+                  <div class="input">
+                    <input type="text" placeholder="Name">
+                  </div>
+                  <div class="input">
+                    <input type="text" placeholder="Phone">
+                  </div>
+                </div>
+                <div class="input">
+                  <input type="text" placeholder="Email">
+                </div>
+                <div class="input">
+                  <textarea placeholder="Leave a brief message here..."></textarea>
+                </div>
+                <div class="form__container">
+                  <div class="input__wrapper">
+                    <label>
+                      Captcha:
+                    </label>
+                    <div class="input">
+                      <input type="text" placeholder="NHTT187">
+                    </div>
+                  </div>
+                  <button class="button button--rounded">
+                    <span class="text">
+                      Reset
+                    </span>
+                  </button>
+                  <div class="input">
+                    <input type="text" placeholder="Enter Captcha">
+                  </div>
+                </div>
+                <button class="button button--rounded _red">
+                  <span class="text">
+                    Send Message
+                  </span>
+                </button>
+              </form>
+            </div>
+            <div class="feedback__inner-image">
+              <div class="ratioImage">
+                <img src="./images/feedback-1.png" alt="image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #feedback end -->
+    <!-- #popUp start -->
+    <div class="popUp" id="popUp">
+      <div class="popUp__contact">
+        <div class="popUp__contact-box">
+          <h5>
+            Contact us
+          </h5>
+          <p>
+            Then someone from our team will contact you as soon as possible with the next steps on your employment
+            journey
+          </p>
+        </div>
+        <form class="form">
+          <div class="input__wrapper">
+            <label>Name</label>
+            <div class="input">
+              <input type="text">
+            </div>
+          </div>
+          <div class="input__wrapper">
+            <label>Email</label>
+            <div class="input">
+              <input type="email">
+            </div>
+          </div>
+          <div class="input__wrapper">
+            <label>Message</label>
+            <div class="input">
+              <textarea placeholder="Type your message..."></textarea>
+            </div>
+          </div>
+          <div class="checkbox__outer">
+            <div class="checkbox">
+              <input type="checkbox" id="check-1">
+              <span>
+              </span>
+            </div>
+            <label for="check-1">
+              I accept the
+              <a href="#">
+                Terms
+              </a>
+            </label>
+          </div>
+          <button class="button button--text">
+            <span class="text">
+              Submit
+            </span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- #popUp end -->
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

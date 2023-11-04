@@ -27,7 +27,7 @@
   }
   &.sticky {
     position: fixed;
-    padding: 20px 0;
+    padding: 10px 0;
     animation: 0.3s sticky ease-in;
     transition-duration: 0.5s;
     border-bottom: 1px solid $black;
@@ -164,15 +164,12 @@
     }
   }
 }
-
 @mixin header-1280 {
   .header {
     &.spacePopUp {
       padding-right: 0;
     }
   }
-}
-@mixin header-1160 {
 }
 @mixin header-1025 {
   .logo {
@@ -183,10 +180,6 @@
   .logo {
     font-size: 14px;
   }
-}
-@mixin header-768 {
-}
-@mixin header-580 {
 }
 @mixin header-460 {
   .logo {
