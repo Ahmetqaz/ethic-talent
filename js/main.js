@@ -1,76 +1,44 @@
-var menu = document.getElementById("menu");
-var menuBtn = document.getElementById("menuBtn");
-var body = document.body;
+const menu = document.getElementById("menu");
+const menuBtn = document.getElementById("menuBtn");
+const closeMenuBtn = document.getElementById("closeMenu");
+const body = document.body;
+
+const toggle = function (state) {
+  menu.classList.toggle("active", state);
+  body.classList.toggle("active", state);
+};
+
 if (menuBtn) {
-  const closeMenu = () => {
-    menu.classList.remove("active");
-    menuBtn.classList.remove("active");
-    body.classList.remove("active");
-  };
-
   menuBtn.onclick = function () {
-    menu.classList.toggle("active");
-    menuBtn.classList.toggle("active");
-    body.classList.toggle("active");
+    toggle(true);
   };
-  window.onclick = function (event) {
-    if (event.target == menu) {
-      closeMenu();
-    }
+  closeMenuBtn.onclick = function () {
+    toggle(false);
+    if (menuForm) menuForm.classList.remove("active");
   };
-
-  
 }
+
+const openForm = document.getElementById("openForm");
+const closeForm = document.getElementById("closeForm");
+const menuForm = document.getElementById("menuForm");
+if (openForm && closeForm) {
+  openForm.onclick = function () {
+    menuForm.classList.add("active");
+  };
+  closeForm.onclick = function () {
+    menuForm.classList.remove("active");
+  };
+}
+
 const header = document.getElementById("header");
-  if (header)
-    window.addEventListener("scroll", () => {
-      if (document.documentElement.scrollTop > 400) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    });
-let popUpBtn = document.getElementById("popUpBtn");
-if (popUpBtn) {
-  let popUp = document.getElementById("popUp");
-  let main = document.getElementById("main");
-  let header = document.getElementById("header");
-  popUpBtn.addEventListener("click", () => {
-    popUpBtn.classList.toggle("active");
-    main.classList.toggle("spacePopUp");
-    header.classList.toggle("spacePopUp");
-    popUp.classList.toggle("active");
+if (header)
+  window.addEventListener("scroll", () => {
+    if (document.documentElement.scrollTop > 400) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
   });
-}
-
-// const links = document.querySelectorAll(".links");
-// const sections = document.querySelectorAll(".anchor");
-// function changeLinkState() {
-//   let index = sections.length;
-//   while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
-//   links.forEach((link) => link.classList.remove("active"));
-//   links[index]?.classList.add("active");
-// }
-// links.forEach((e) => {
-//   onLinkClick(e);
-// });
-// function onLinkClick(linkItem) {
-//   linkItem.addEventListener("click", function () {
-//     menu.classList.remove("active");
-//     menuBtn.classList.remove("active");
-//     body.classList.remove("active");
-//   });
-// }
-// function onLinkClick(linkItem) {
-//   linkItem.addEventListener("click", function () {
-//     menu.classList.remove("active");
-//     menuBtn.classList.remove("active");
-//     body.classList.remove("active");
-//   });
-// }
-// window.onscroll = function () {
-//   changeLinkState();
-// };
 
 ///
 ///
@@ -79,8 +47,3 @@ if (popUpBtn) {
 // new WOW().init({
 //   boxClass: "wow",
 // });
-
-
-
-
-
