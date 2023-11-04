@@ -4,6 +4,7 @@
   @include popUp-1340;
   @include index-1340;
   @include barTabs-1340;
+  @include info-1340;
 }
 @media (max-width: 1280px) {
   @include components-1280;
@@ -11,6 +12,8 @@
   @include popUp-1280;
   @include barTabs-1280;
   @include index-1280;
+  @include grid-1280;
+  @include info-1280;
 }
 @media (max-width: 1160px) {
   .autoContainer {
@@ -30,6 +33,7 @@
   @include index-1025;
   @include barTabs-1025;
   @include contact-1025;
+  @include info-1025;
 }
 @media (max-width: 940px) {
   .autoContainer {
@@ -53,6 +57,8 @@
   @include barTabs-768;
   @include contact-768;
   @include footer-768;
+  @include info-768;
+  @include grid-768;
 }
 @media (max-width: 580px) {
   ._hideMob {
@@ -62,6 +68,8 @@
   @include popUp-580;
   @include index-580;
   @include contact-580;
+  @include grid-580;
+  @include info-580;
 }
 @media (max-width: 460px) {
   @include typography-460;
