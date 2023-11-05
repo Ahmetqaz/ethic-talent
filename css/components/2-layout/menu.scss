@@ -145,6 +145,12 @@
         flex-direction: column;
         gap: 16px;
       }
+      .form {
+        .button {
+          margin: 0;
+          min-width: 120px;
+        }
+      }
     }
   }
   &.active {
