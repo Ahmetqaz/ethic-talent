@@ -1646,6 +1646,9 @@ svg {
 .form .checkbox__outer label a {
   font-family: inherit;
 }
+.form .button--text {
+  margin-right: auto;
+}
 .form .button__group .button {
   padding: 0.9em 1.34em;
 }
@@ -2556,7 +2559,41 @@ svg {
   margin: 0 auto;
 }
 .employment__footer .ratioImage {
-  padding-bottom: 18.5%;
+  padding-bottom: 16%;
+}
+.employment__footer .ratioImage span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.employment__footer .ratioImage span:nth-child(2) {
+  display: none;
+}
+.employment__footer .ratioImage svg {
+  width: 100%;
+  height: 100%;
+  pointer-events: all;
+}
+.employment__footer .ratioImage svg path {
+  pointer-events: none;
+}
+.employment__footer .ratioImage img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.employment__footer .ratioImage img:nth-child(2) {
+  display: none;
 }
 
 @media (max-width: 1340px) {
@@ -3295,6 +3332,26 @@ svg {
     width: 100%;
     gap: 20px;
   }
+  .employment__inner {
+    padding-bottom: 30px;
+  }
+  .employment__footer .ratioImage {
+    padding-bottom: 23%;
+  }
+  .employment__footer .ratioImage img:nth-child(1) {
+    display: none;
+  }
+  .employment__footer .ratioImage img:nth-child(2) {
+    display: block;
+  }
+  .employment__footer .ratioImage span:nth-child(1) {
+    display: none;
+  }
+  .employment__footer .ratioImage span:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .contact {
     padding: 40px 0;
   }
@@ -3367,6 +3424,9 @@ svg {
   }
   .scrollProgres__scale-index {
     font-size: 20px;
+  }
+  .feedback {
+    padding: 30px 0;
   }
   .feedback .form__group {
     gap: 12px;

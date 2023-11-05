@@ -13,9 +13,15 @@
       }
     }
   }
+  .button {
+    &--text {
+      margin-right: auto;
+    }
+  }
   .button__group {
     .button {
       padding: 0.9em 1.34em;
+
       &--border {
         color: $black;
         border-color: $black;
