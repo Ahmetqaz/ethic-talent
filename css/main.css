@@ -360,7 +360,7 @@ svg {
 }
 .input input:focus,
 .input textarea:focus {
-  border-color: rgba(235, 98, 91, 0.75);
+  border-color: rgba(0, 0, 0, 0.35);
 }
 .input textarea {
   height: 180px;
@@ -2312,8 +2312,8 @@ svg {
   display: flex;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 .hero__tab {
   display: -webkit-box;
@@ -2994,7 +2994,7 @@ svg {
     font-size: 30px;
   }
   .feedback {
-    padding: 50px 0;
+    padding: 30px 0 40px;
   }
   .feedback__inner-row {
     -webkit-box-orient: vertical;
@@ -3377,9 +3377,6 @@ svg {
   .scrollProgres__scale-index {
     font-size: 26px;
   }
-  .feedback {
-    padding: 40px 0;
-  }
   .feedback .form__group {
     gap: 12px;
   }
@@ -3426,7 +3423,7 @@ svg {
     font-size: 20px;
   }
   .feedback {
-    padding: 30px 0;
+    padding: 10px 0 40px;
   }
   .feedback .form__group {
     gap: 12px;

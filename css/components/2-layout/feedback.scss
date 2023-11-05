@@ -161,7 +161,7 @@
 }
 @mixin feedback-940 {
   .feedback {
-    padding: 50px 0;
+    padding: 30px 0 40px;
     &__inner {
       &-row {
         flex-direction: column;
@@ -189,7 +189,6 @@
 }
 @mixin feedback-580 {
   .feedback {
-    padding: 40px 0;
     .form {
       &__group {
         gap: 12px;
@@ -199,7 +198,7 @@
 }
 @mixin feedback-460 {
   .feedback {
-    padding: 30px 0;
+    padding: 10px 0 40px;
     .form {
       &__group {
         gap: 12px;
