@@ -99,7 +99,7 @@
       left: 0;
       background: $black-3;
     }
-&._dark {
+    &._dark {
       img {
         opacity: 1;
       }
@@ -205,6 +205,9 @@
     }
   }
   &__footer {
+    max-width: 2400px;
+    margin: 0 auto;
+
     .ratioImage {
       padding-bottom: 18.5%;
     }

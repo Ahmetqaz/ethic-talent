@@ -2551,6 +2551,10 @@ svg {
   width: calc(50% - 15px);
   max-width: 616px;
 }
+.employment__footer {
+  max-width: 2400px;
+  margin: 0 auto;
+}
 .employment__footer .ratioImage {
   padding-bottom: 18.5%;
 }
