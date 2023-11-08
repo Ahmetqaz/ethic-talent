@@ -207,31 +207,29 @@
   &__footer {
     max-width: 2400px;
     margin: 0 auto;
+    position: relative;
+    &:hover {
+      img {
+        // transform: scale(1.01);
+      }
+    }
+    &-button {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      z-index: 1;
+      &._right {
+        left: unset;
+        right: 0;
+      }
+    }
     .ratioImage {
       padding-bottom: 16%;
-      span {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        &:nth-child(2) {
-          display: none;
-        }
-      }
-      svg {
-        width: 100%;
-        height: 100%;
-        pointer-events: all;
-        path {
-          pointer-events: none;
-        }
-      }
       img {
         object-fit: contain;
+        @include transition;
         &:nth-child(2) {
           display: none;
         }
@@ -509,6 +507,12 @@
       padding-bottom: 30px;
     }
     &__footer {
+      &-button {
+        width: 45%;
+        &._right {
+          width: 55%;
+        }
+      }
       .ratioImage {
         padding-bottom: 23%;
         img {

@@ -2557,40 +2557,28 @@ svg {
 .employment__footer {
   max-width: 2400px;
   margin: 0 auto;
+  position: relative;
+}
+.employment__footer-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+}
+.employment__footer-button._right {
+  left: unset;
+  right: 0;
 }
 .employment__footer .ratioImage {
   padding-bottom: 16%;
 }
-.employment__footer .ratioImage span {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.employment__footer .ratioImage span:nth-child(2) {
-  display: none;
-}
-.employment__footer .ratioImage svg {
-  width: 100%;
-  height: 100%;
-  pointer-events: all;
-}
-.employment__footer .ratioImage svg path {
-  pointer-events: none;
-}
 .employment__footer .ratioImage img {
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 .employment__footer .ratioImage img:nth-child(2) {
   display: none;
@@ -3334,6 +3322,12 @@ svg {
   }
   .employment__inner {
     padding-bottom: 30px;
+  }
+  .employment__footer-button {
+    width: 45%;
+  }
+  .employment__footer-button._right {
+    width: 55%;
   }
   .employment__footer .ratioImage {
     padding-bottom: 23%;
