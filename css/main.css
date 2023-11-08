@@ -164,6 +164,9 @@
 h1 {
   font-size: 56px;
 }
+h1._lg {
+  font-size: 72px;
+}
 
 h2 {
   font-size: 48px;
@@ -1590,6 +1593,10 @@ svg {
           flex-direction: column;
   gap: 16px;
 }
+.menu__inner-contact .form .button {
+  margin: 0;
+  min-width: 120px;
+}
 .menu.active {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
@@ -2302,7 +2309,7 @@ svg {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
-  max-width: 650px;
+  max-width: 750px;
   margin: auto;
   text-align: center;
 }
@@ -2405,6 +2412,40 @@ svg {
 .hero__bg._dark:before {
   z-index: 1;
   background: rgba(0, 0, 0, 0.5);
+}
+.hero__bg._main {
+  border-top: 1px solid #000;
+}
+.hero__bg._main:before {
+  background: #fff0db;
+}
+.hero-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+  margin: auto;
+  width: 100%;
+  padding-bottom: 10vh;
+}
+.hero-logo img {
+  max-width: 670px;
+  width: 100%;
+  height: auto;
+}
+.hero-logo .button--border._black {
+  min-width: 140px;
+  background: #fff;
+}
+.hero-logo .button--border._black:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 .hero .autoContainer {
   width: 100%;
@@ -2561,20 +2602,45 @@ svg {
 }
 .employment__footer-button {
   position: absolute;
-  left: 0;
+  left: -42px;
   top: 0;
-  width: 50%;
-  height: 100%;
+  width: 45%;
+  height: 72%;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.employment__footer-button img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .employment__footer-button._right {
+  top: 5px;
   left: unset;
-  right: 0;
+  height: 80%;
+  right: -35px;
+}
+.employment__footer-button:hover {
+  -webkit-transform: translateY(-5%) scale(1.1);
+          transform: translateY(-5%) scale(1.1);
 }
 .employment__footer .ratioImage {
   padding-bottom: 16%;
 }
 .employment__footer .ratioImage img {
+  position: absolute;
+  top: unset;
+  bottom: 0;
+  height: 40%;
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-transition: all 0.3s ease-in-out 0s;
@@ -2582,6 +2648,22 @@ svg {
 }
 .employment__footer .ratioImage img:nth-child(2) {
   display: none;
+}
+.employment__footer a {
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  -webkit-transform: translateY(1.5%);
+          transform: translateY(1.5%);
+}
+.employment__footer a:hover {
+  -webkit-transform: translateY(-1.5%) scale(1.05);
+          transform: translateY(-1.5%) scale(1.05);
+}
+.employment__footer a:active {
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 @media (max-width: 1340px) {
@@ -2609,6 +2691,12 @@ svg {
   .work__inner-title {
     font-size: 120px;
   }
+  .hero-logo img {
+    max-width: 550px;
+  }
+  .employment__footer-button {
+    width: 48%;
+  }
   .barTabs__content-frame {
     width: 47vw;
   }
@@ -2618,8 +2706,17 @@ svg {
   .work__inner-title {
     font-size: 120px;
   }
+  .hero-logo img {
+    max-width: 550px;
+  }
+  .employment__footer-button {
+    width: 48%;
+  }
 }
 @media (max-width: 1280px) {
+  h1._lg {
+    font-size: 64px;
+  }
   h3 {
     font-size: 35px;
   }
@@ -2659,6 +2756,9 @@ svg {
   .barTabs__content-frame {
     width: 45vw;
   }
+  .hero-logo img {
+    max-width: 450px;
+  }
   .explore__inner {
     gap: 60px;
   }
@@ -2676,6 +2776,13 @@ svg {
   }
   .work__inner-title {
     font-size: 110px;
+  }
+  .employment__footer-button {
+    width: 50%;
+    height: 74%;
+  }
+  .employment__footer-button._right {
+    height: 78%;
   }
   .grid__row {
     -ms-flex-wrap: wrap;
@@ -2699,6 +2806,9 @@ svg {
 @media (max-width: 1160px) {
   .autoContainer {
     padding: 0 40px;
+  }
+  h1._lg {
+    font-size: 56px;
   }
   h3 {
     font-size: 30px;
@@ -2757,6 +2867,9 @@ svg {
   }
   .explore {
     padding: 90px 0;
+  }
+  .hero__inner-container {
+    max-width: 650px;
   }
   .service {
     padding: 90px 0;
@@ -3079,6 +3192,9 @@ svg {
   h1 {
     font-size: 50px;
   }
+  h1._lg {
+    font-size: 50px;
+  }
   h2 {
     font-size: 44px;
   }
@@ -3274,6 +3390,9 @@ svg {
   h1 {
     font-size: 42px;
   }
+  h1._lg {
+    font-size: 42px;
+  }
   h2 {
     font-size: 40px;
   }
@@ -3324,10 +3443,14 @@ svg {
     padding-bottom: 30px;
   }
   .employment__footer-button {
-    width: 45%;
+    width: 46%;
+    height: 90%;
+    left: -38px;
   }
   .employment__footer-button._right {
-    width: 55%;
+    right: -2px;
+    width: 54%;
+    height: 80%;
   }
   .employment__footer .ratioImage {
     padding-bottom: 23%;
@@ -3377,6 +3500,9 @@ svg {
 }
 @media (max-width: 460px) {
   h1 {
+    font-size: 38px;
+  }
+  h1._lg {
     font-size: 38px;
   }
   h2 {
@@ -3432,6 +3558,9 @@ svg {
 }
 @media (max-width: 390px) {
   h1 {
+    font-size: 32px;
+  }
+  h1._lg {
     font-size: 32px;
   }
   h2 {
